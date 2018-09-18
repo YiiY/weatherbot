@@ -1,0 +1,8 @@
+{
+  "name": "WeatherBot",
+  "description": "Slacks bot that tells you the weather",
+  "repository": "https://github.com/YiiY/weatherbot.git",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "keywords": ["node", "slackbots", "axios", "heroku"],
+  "image": "heroku/nodejs"
+}
