@@ -1,0 +1,11 @@
+{
+  "name": "weatherbot",
+  "version": "1.0.0",
+  "description": "Tells you about the weather",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Yi",
+  "license": "ISC"
+}
