@@ -1,5 +1,12 @@
 const SlackBot = require('slackbots');
 const axios = require('axios');
+const express = require('express');
+const app = express();
+
+app.get('/',function(req,res){
+	res.send('hell world');
+	
+
 
 const bot = new SlackBot({
 
@@ -76,3 +83,7 @@ function getHelp(){
  			'You can enter by city,zipcode,country or corrdinates.\nExamples: San Mateo, 94402 or USA'
  		);
 }
+
+});
+
+app.listen(5000);
