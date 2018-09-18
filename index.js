@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 app.get('/',function(req,res){
-	res.send('hell world');
+	res.send('hello world');
 	
 
 
@@ -86,4 +86,4 @@ function getHelp(){
 
 });
 
-app.listen(5000);
+app.listen(process.env.PORT || 5000);

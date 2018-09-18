@@ -3,6 +3,6 @@
   "description": "Slacks bot that tells you the weather",
   "repository": "https://github.com/YiiY/weatherbot.git",
   "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
-  "keywords": ["node", "slackbots", "axios", "heroku"],
+  "keywords": ["node", "slackbots", "axios", "express", "heroku"],
   "image": "heroku/nodejs"
 }
