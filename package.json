@@ -25,7 +25,8 @@
   "keywords": [
     "node",
     "heroku",
-    "express"
+    "slackbots",
+	"axios"
   ],
   "author": "Yi",
   "license": "ISC"
