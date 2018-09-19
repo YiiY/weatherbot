@@ -40,7 +40,7 @@ bot.on('message',data => {
 
 });
 
-//brach for 2 type of commands: 1)help 2)weather commands
+//branch for 2 type of commands: 1)help 2)weather commands
 function messageHandler(message){
 		
 		if(message.includes('help'))
