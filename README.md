@@ -33,11 +33,11 @@ The Drawback is that since its free tier service, the hosted app will become idl
 To wake up the bot, go to 'https://yiweatherbot.herokuapp.com' and the bot will become active again in slack
 
 ### File Overview
-app.json: json file require for Heroku cloud service.<br />
-index.js: main file used for starting up service bot, message handling and connecting to openweather api.<br />
-package.json: contains all the resource used: express, slackbots and axios.<br />
-Procfile: a trigger file require for Heroku, for start command.<br />
-README.md: descript/instruction for weatherbot<br />
+**app.json**: json file require for Heroku cloud service.<br />
+**index.js**: main file used for starting up service bot, message handling and connecting to openweather api.<br />
+**package.json**: contains all the resource used: express, slackbots and axios.<br />
+**Procfile**: a trigger file require for Heroku, for start command.<br />
+**README.md**: descript/instruction for weatherbot<br />
 
 ### Personal Note
 This was an interesting project, I havent had a lot experience with Slack, they sure have some cool stuff in there.
