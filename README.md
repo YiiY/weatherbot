@@ -12,11 +12,11 @@ Get reports by typing in city names, zip codes, latitude and lontidude.
 Note: (Message has to be directed at the weatherbot,
 Use '@WeatherWiz9000 ' at the begining of messages.)
 
-If I want to know the weather in San Mateo, USA, I could do the following commands:
-@WeatherWiz9000 San Mateo
-@WeatherWiz9000 San Mateo,USA
-@WeatherWiz9000 zip=94402
-@WeatherWiz9000 lat=37&lon=122
+If I want to know the weather in San Mateo, USA, I could do the following commands:<br />
+@WeatherWiz9000 San Mateo<br />
+@WeatherWiz9000 San Mateo,USA<br />
+@WeatherWiz9000 zip=94402<br />
+@WeatherWiz9000 lat=37&lon=122<br />
 
 user can also type in "@WeatherWiz9000 help" for commands help.
 
