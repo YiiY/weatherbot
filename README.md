@@ -6,6 +6,10 @@ His name is WeatherWiz9000!
 This weatherbot reports the weather condition for a given location.
 
 ## Usage
+Two ways to interact with the bot:
+1) go to 'https://yiweatherbot.herokuapp.com' and send the commands
+2) send commands direectly through slack channel
+
 Get reports by typing in city names, zip codes, latitude and lontidude.
 
 ## Examples 
@@ -26,16 +30,24 @@ user can also type in "@WeatherWiz9000 help" for commands help.
 Weatherbot is created as a bot user in Slack, it will only post messages to GENERAL Chat.
 Bot status icon will be green if its online.
 
-For code breakdown go inside index.js for more details.
+This project is built using the following open-source libraries:
+Express: used to create the service and listen to ports
+Axios: used to make POST or GET request to the slack webhook, open weather api
+Slackbots: used to invoke bot interactives and post messages to the chat
 
+For additional code breakdown go inside index.js for more details.
+
+## Additional Notes
 This slackbot is deployed on Heroku, a cloud hosting service.
 The Drawback is that since its free tier service, the hosted app will become idle after 30 mins of inactivity.
 To wake up the bot, go to 'https://yiweatherbot.herokuapp.com' and the bot will become active again in slack.
 It takes about 10-15 secs for Heroku to start up the service. :(
+Once the bot is active, user can use either methods to send commands.
 
 ### File Overview
-**app.json**: json file require for Heroku cloud service.<br />
+**index.html**: html file containing simple input box to send message to slack 'general' chat.<br />
 **index.js**: main file used for starting up service bot, message handling and connecting to openweather api.<br />
+**app.json**: json file require for Heroku cloud service.<br />
 **package.json**: contains all the resource used: express, slackbots and axios.<br />
 **Procfile**: a trigger file require for Heroku, for start command.<br />
 **README.md**: descript/instruction for weatherbot<br />
