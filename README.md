@@ -41,7 +41,7 @@ For additional code breakdown go inside index.js for more details.
 This slackbot is deployed on Heroku, a cloud hosting service.
 The Drawback is that since its free tier service, the hosted app will become idle after 30 mins of inactivity.
 To wake up the bot, go to 'https://yiweatherbot.herokuapp.com' and the bot will become active again in slack.
-It takes about 10-15 secs for Heroku to start up the service. :(
+It takes about 10-15 secs for Heroku to start up the service. :( <br />
 Once the bot is active, user can use either methods to send commands.
 
 ### File Overview
