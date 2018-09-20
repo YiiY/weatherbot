@@ -2,9 +2,10 @@ const SlackBot = require('slackbots');
 const axios = require('axios');
 const express = require('express');
 const app = express();
+const path =require('path');
 
 app.get('/',function(req,res){
-	res.send('Bot is Live!');
+	res.sendFile(path.join(__dirname + '/index.html'));
 
 const bot = new SlackBot({//initiate the slack bot, request bot using token and name
 
@@ -28,9 +29,9 @@ bot.on('start',()=>{
 bot.on('error', err => console.log(err));
 
 //Message Handler
-//only process the text if its from a non-bot user and a message
+//only process the text if the message is directed at the bot.
 bot.on('message',data => {
-
+	//comment this if statement out will cause every message in the channel to be sent as a request
 	if(data.username !== 'WeatherWiz9000' && data.type == 'message'){
 		messageHandler(data.text);
 		
@@ -42,16 +43,15 @@ bot.on('message',data => {
 
 //branch for 2 type of commands: 1)help 2)weather commands
 function messageHandler(message){
-		
 		if(message.includes('help'))
 			getHelp();
-
 		//weather commands requires user to start the input with "@{botid}"
 		//meaning the msg has to be address to the weather bot
 		else if(message.includes('@UCVG08JP7')){
-				const str = message.replace('<@UCVG08JP7> ','')
-				getWeather(str);
-
+			getWeather(message.replace('<@UCVG08JP7> ',''));
+		}
+		else if(message.includes("@WeatherWiz9000 ")){
+			getWeather(message.replace('@WeatherWiz9000 ',''));
 		}
 	
 }

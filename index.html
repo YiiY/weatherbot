@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BotHook</title>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<input type="text" name="message" id="msg" value="@WeatherWiz9000 ">
+
+<button onclick="sendMsg()">
+	
+	send to slack
+
+</button>
+<script>
+	function sendMsg(){
+		var str = {'text': document.getElementById('msg').value};
+		axios({
+			url:'https://hooks.slack.com/services/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',
+			method: 'post',
+    		headers:{
+    			'Content-Type':'application/x-www-form-urlencoded'
+    		},
+    		data: str
+  		});
+  		/*.then(function (response) {
+    		console.log(response);
+  		})
+  		.catch(function (error) {
+    		console.log(error);
+  		});*/
+
+}
+
+</script>
+</body>
+</html>
+
