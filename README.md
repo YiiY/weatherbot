@@ -55,6 +55,6 @@ Once the bot is active, user can use either methods to send commands.
 ### Personal Note
 This was an interesting project, I havent had a lot experience with Slack, they sure have some cool stuff in there.
 The most diffcult part for me was surprisingly trying to find a good and free cloud hosting service. Heroku wasnt too bad
-but it has its pros and cons. I ran into problems at first after first deploy on Heroku, since Im required to assign a port
+but it has its pros and cons. I ran into problems at first after first deploy on Heroku, problems such as Im required to assign a port
 to within the first 60secs. Then I found out it would stop the service after 30min of inactivty, but one can "wake" the service 
 by going to your hosted app site on heroku. 
