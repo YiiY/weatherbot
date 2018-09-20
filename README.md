@@ -8,7 +8,7 @@ This weatherbot reports the weather condition for a given location.
 ## Usage
 Two ways to interact with the bot:
 1) go to 'https://yiweatherbot.herokuapp.com' and send the commands
-2) send commands direectly through slack channel
+2) send commands directly through slack channel
 
 Get reports by typing in city names, zip codes, latitude and lontidude.
 
