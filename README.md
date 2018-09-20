@@ -50,7 +50,7 @@ Once the bot is active, user can use either methods to send commands.
 **app.json**: json file require for Heroku cloud service.<br />
 **package.json**: contains all the resource used: express, slackbots and axios.<br />
 **Procfile**: a trigger file require for Heroku, for start command.<br />
-**README.md**: descript/instruction for weatherbot<br />
+**README.md**: description/instruction for weatherbot<br />
 
 ### Personal Note
 This was an interesting project, I havent had a lot experience with Slack, they sure have some cool stuff in there.
