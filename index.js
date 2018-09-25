@@ -9,7 +9,7 @@ app.get('/',function(req,res){
 
 const bot = new SlackBot({//initiate the slack bot, request bot using token and name
 
-	token:'xoxb-437256997315-437544290789-d7zX8LpjQeV0Np694vsHcufB',
+	token:'YOUR SLACK BOT TOKEN',
 	name:'WeatherWiz9000'
 
 });
@@ -65,7 +65,7 @@ function getWeather(message){
 		
 	}
 	
-	axios.get('http://api.openweathermap.org/data/2.5/weather?'+ optr +message.replace('amp;','')+'&APPID=3108b6e814e9396d7f54573e06dd1959')
+	axios.get('http://api.openweathermap.org/data/2.5/weather?'+ optr +message.replace('amp;','')+'&APPID=YOUROPENWEATHERAPPID')
 	.then(function (response) {
 		
 		//gets the weather description and temperture from the input 
