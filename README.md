@@ -1,6 +1,6 @@
 # Weatherbot
 Interactive SlackBot for weather info!
-His name is WeatherWiz9000!
+His name is WeatherWiz9000!!
 
 ## Descrption
 This weatherbot reports the weather condition for a given location.
@@ -12,7 +12,7 @@ Two ways to interact with the bot:
 
 Get reports by typing in city names, zip codes, latitude and lontidude.
 
-## Examples 
+## Examples
 Note: (Message has to be directed at the weatherbot,
 Use '@WeatherWiz9000 ' at the begining of messages.)
 
@@ -56,5 +56,5 @@ Once the bot is active, user can use either methods to send commands.
 This was an interesting project, I havent had a lot experience with Slack, they sure have some cool stuff in there.
 The most diffcult part for me was surprisingly trying to find a good and free cloud hosting service. Heroku wasnt too bad
 but it has its pros and cons. I ran into problems at first after first deploy on Heroku, problems such as Im required to assign a port
-to within the first 60secs. Then I found out it would stop the service after 30min of inactivty, but one can "wake" the service 
-by going to your hosted app site on heroku. 
+to within the first 60secs. Then I found out it would stop the service after 30min of inactivty, but one can "wake" the service
+by going to your hosted app site on heroku.
